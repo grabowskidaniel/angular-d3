@@ -1,5 +1,5 @@
-export interface FrontendFrameworks {
-  frameworkName: string;
+export interface FrontendFramework {
+  name: string;
   stars: number;
   released: string;
 }
