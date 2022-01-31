@@ -64,6 +64,7 @@ export class FrontendFrameworksChartComponent implements OnInit {
     // text label for the x axis
     svg
       .append("text")
+      .attr('class', 'x-axis-label')
       .attr("y", this.height + this.margin)
       .attr("x", this.width / 2)
       .style("text-anchor", "middle")
@@ -72,6 +73,7 @@ export class FrontendFrameworksChartComponent implements OnInit {
     // text label for the y axis
     svg
       .append("text")
+      .attr('class', 'y-axis-label')
       .attr("text-anchor", "middle")
       .attr("transform", "rotate(-90)")
       .attr("y", -this.margin + 15)
